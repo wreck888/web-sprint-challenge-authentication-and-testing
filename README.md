@@ -54,6 +54,17 @@ Your finished project must include all of the following requirements (further in
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+
+    The fundamental difference between sessions and JSON web tokens for authentication is that sessions are stored on the server and when requested it is sent through session cookies whereas JSON web tokens are not stored on the server but in a token where it is sent to the client and stored when requested. Sessions has issues when it comes to scalability because the sessions are stored in the servers versus a token based authentication where the token is stored on the client side so scalabity is not an issue with tokens.
+
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
+
+    Bcryptjs allows us to 'hash' passwords making it harder for hackers to obtain someones original password. Through bcryptjs hashing we can hash the passwords as many times as the developer would like so any hacker would have a very difficult time decrypting the hash to find the original password that is stored. 
+
 3. How are unit tests different from integration and end-to-end testing?
+
+    They all differ because unit tests work on a single 'unit' of code. Usually smaller and quicker in size compared to the other forms of testing. Integration tests are used to test how and if different components or parts of the code work together. End to end testing is testing of the code/application from beginning to end of how the user would use the website or application. Basically a full functioning test of the overall application.
+
 4. How does _Test Driven Development_ change the way we write applications and tests?
+
+    It changes the way we write code and tests because it is almost like we are starting from the end and working backwards. There are three phases of test driven development and it starts with creating the tests first, then producing the code to make the tests work and then we refactor the code to optimize by making it clean, efficent, and DRY. 
